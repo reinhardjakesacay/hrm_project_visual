@@ -6,19 +6,19 @@
     <script
 src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js">
 </script>
-    <title>Skill Proficiency</title>
+    <title>Job Position</title>
 </head>
 <body>
     <!-- canvas chartjs -->
     <div class="col-md-6">
         <div class="card ">
             <div class="header">
-                <h4 class="title">Skill Proficiency</h4>
-                <p class="category">Skill</p>
+                <h4 class="title">Job Position</h4>
+                <p class="category">Job</p>
             </div>
 
             <div class="content">
-            <canvas id="skillProf"></canvas>
+            <canvas id="jobPos"></canvas>
             </div>
         </div>
     </div>
@@ -32,19 +32,19 @@ require('config/db.php');
 
 // ----------------------------------------------------------------------
 
-$query1 = "SELECT skills.skill_type, count(skills_has_employees.employees_idemployees) as employee_skill
-from skills
-join skills_has_employees on skills.idskills = skills_has_employees.skills_idskills
-group by skills.idskills
-order by employee_skill desc";
+$query1 = "select job_positions.job_category, count(service_records.job_positions_idjob_positions) as job_count
+from job_positions 
+join service_records on job_positions.idjob_positions = service_records.job_positions_idjob_positions
+group by job_positions.idjob_positions
+order by job_count desc";
 
 $result1 = mysqli_query($conn, $query1);
 if(mysqli_num_rows($result1) > 0){
     $order_count1 = array();
     $label_barchart1 = array();
     while ($row = mysqli_fetch_array($result1)){
-        $order_count1[] = $row['employee_skill'];
-        $label_barchart1[] = $row['skill_type'];
+        $order_count1[] = $row['job_count'];
+        $label_barchart1[] = $row['job_category'];
     }
     mysqli_free_result($result1);
 }else{
@@ -97,8 +97,8 @@ const config4 = {
     }
 };
 // <!-- render block -->
-const skillProf = new Chart(
-    document.getElementById('skillProf'),
+const jobPos = new Chart(
+    document.getElementById('jobPos'),
     config4
 );
 // ----------------------------------------------------------------------
