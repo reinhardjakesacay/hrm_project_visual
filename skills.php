@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script
 src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js">
 </script>
@@ -13,7 +14,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js">
     <div class="col-md-6">
         <div class="card ">
             <div class="header">
-                <h4 class="title">Skill Proficiency</h4>
+                <h1 class="title">Skill Proficiency</h1>
                 <p class="category">Skill</p>
             </div>
 
