@@ -15,7 +15,12 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js">
         <div class="card ">
             <div class="header">
                 <h1 class="title">Skill Proficiency</h1>
+            </div>
+            <div class="description">
                 <p class="category">Skill</p>
+            </div>
+            <div class="nav">
+                <a href="home_page.php"><button>Home</button></a>
             </div>
 
             <div class="content">

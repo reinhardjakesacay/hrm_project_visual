@@ -2,6 +2,8 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body {
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 .container {
@@ -23,14 +25,40 @@ body {
 .container .nav {
     padding: 15px;
 }
-.container .nav button {
+button {
+    float: left;
     border-radius: 15px;
     margin: 0 20px;
     padding: 15px;
     font-size: 15px;
-}
-.container .nav button a {
-    text-decoration: none;
-    color: black;
     font-weight: 700;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(76, 76, 76, 0.877);
+    float: left;
+    border-radius: 15px;
+    margin: 0 20px;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+.content {
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+.header{
+    background-color: rgba(76, 76, 76, 0.877);
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
 }

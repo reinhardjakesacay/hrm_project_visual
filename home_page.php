@@ -10,9 +10,9 @@
     <div class="container">
         <h1>Employee Skill Competencies and <br>Perception of SDE</h1>
             <div class="nav">
-                <button><a href="skills.php">Skill</a></button>
-                <button><a href="job_position.php">Job Position</a></button>
-                <button><a href="address.php">Residence</a></button>
+                <a href="skills.php"><button>Skill</button></a>
+                <a href="job_position.php"><button>Job Position</button></a>
+                <a href="address.php"><button>Residence</button></a>
             </div>
     </div>
 </body>
