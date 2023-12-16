@@ -21,7 +21,7 @@ body {
     height: fit-content;
     display: grid;
     place-items: center;
-    margin: 15% auto 0;
+    margin: 13% auto 0;
     padding: 15px;
 }
 .container h1{
@@ -66,4 +66,10 @@ canvas {
     padding: 15px;
     margin: 15px auto;
     width: 500px;
+}
+.container p {
+    font-weight: 500;
+    color: white;
+    width: 350px;
+    margin-bottom: 50px;
 }
