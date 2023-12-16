@@ -21,7 +21,7 @@ body {
     height: fit-content;
     display: grid;
     place-items: center;
-    margin: 13% auto 0;
+    margin: 10% auto 0;
     padding: 15px;
 }
 .container h1{
