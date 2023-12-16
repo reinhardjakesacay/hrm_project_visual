@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Employee Skill Competencies and <br>Perception of SDE</h1>
         <!-- <p>The result of the article is a visualization of the respondent's skills, knowledge, and competencies. It also shows the job positions and addresses of the respondents.</p> -->
-        <p>The result of the article is a visualization of the respondent's skills, job positions, and addresses. The visualizations show human resource collected data to arrive at the conclusion on how it can affect the employees or respondents effectiveness in the organizarion.</p>
+        <p>The result of the article is a visualization of the respondent's skills, job positions, and addresses. The visualizations show human resource collected data to arrive at the conclusion on how it can affect the employees or respondents effectiveness in the organization.</p>
             <div class="nav">
                 <a href="skills.php"><button>Skill</button></a>
                 <a href="job_position.php"><button>Job Position</button></a>
