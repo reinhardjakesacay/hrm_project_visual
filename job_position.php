@@ -17,7 +17,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js">
                 <h1 class="title">Job Position</h1>
             </div>
             <div class="description">
-                <p class="category">Job</p>
+                <p class="category">The impact of a job position on a company is significant. Different job positions contribute to the overall functioning, success, and growth of an organization in various ways. Below is a bar chart that visualizes the job positions as well as the company's employee and their respective jobs.</p>
             </div>
             <div class="nav">
                 <a href="home_page.php"><button>Home</button></a>
@@ -42,7 +42,7 @@ $query1 = "select job_positions.job_category, count(service_records.job_position
 from job_positions 
 join service_records on job_positions.idjob_positions = service_records.job_positions_idjob_positions
 group by job_positions.idjob_positions
-order by job_count desc";
+order by job_category";
 
 $result1 = mysqli_query($conn, $query1);
 if(mysqli_num_rows($result1) > 0){

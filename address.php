@@ -17,7 +17,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js">
                 <h1 class="title">Residence</h1>
             </div>
             <div class="description">
-                <p class="category">Address</p>
+                <p class="category">The residence of an employee can affect a company in several ways, influencing aspects such as productivity, work-life balance, and work ethics or beliefs. Employees with same area of residence shows similarities thus could work effectively. Bolew is a chart shows the summation of employee that lives in the same residence.</p>
             </div>
             <div class="nav">
                 <a href="home_page.php"><button>Home</button></a>

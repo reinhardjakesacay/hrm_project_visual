@@ -17,7 +17,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js">
                 <h1 class="title">Skill Proficiency</h1>
             </div>
             <div class="description">
-                <p class="category">Skill</p>
+                <p class="category">Skills play a significant role in influencing job performance and overall success in a career. Employee that mastered multiple skill/s, show competence in their respective jobs. Below is a bar chart of skills and the number of employees that could utilized their skill.</p>
             </div>
             <div class="nav">
                 <a href="home_page.php"><button>Home</button></a>
@@ -42,7 +42,7 @@ $query1 = "SELECT skills.skill_type, count(skills_has_employees.employees_idempl
 from skills
 join skills_has_employees on skills.idskills = skills_has_employees.skills_idskills
 group by skills.idskills
-order by employee_skill desc";
+order by skill_type";
 
 $result1 = mysqli_query($conn, $query1);
 if(mysqli_num_rows($result1) > 0){
