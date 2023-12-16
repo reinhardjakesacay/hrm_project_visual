@@ -1,0 +1,35 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    text-align: center;
+}
+.container {
+    border-radius: 15px;
+    background-color: rgba(76, 76, 76, 0.877);
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+    margin: 15% auto 0;
+    padding: 15px;
+}
+.container h1{
+    font-weight: 900;
+    margin-bottom: 35px;
+    color: white;
+}
+.container .nav {
+    padding: 15px;
+}
+.container .nav button {
+    border-radius: 15px;
+    margin: 0 20px;
+    padding: 15px;
+    font-size: 15px;
+}
+.container .nav button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
